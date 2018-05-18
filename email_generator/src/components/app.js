@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     handleChange(quote) {
-        this.setState({ quote: quote.output, });
+        this.setState({ quote, });
     }
 
     render() {

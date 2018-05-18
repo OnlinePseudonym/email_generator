@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+
 class Quote extends Component {
     constructor(props) {
         super(props);
@@ -8,17 +10,16 @@ class Quote extends Component {
             quoteTitle: '',
             quote: '',
             quoteAttribution: '',
-            output: '',
         };
 
         this.onInputChange = this.onInputChange.bind(this);
     }
 
+
     onInputChange(e) {
         const newState = {};
         newState[e.target.name] = e.target.value;
         this.setState( newState );
-        this.props.handleChange(this.state)
     }
 
     onQuoteChange() {
@@ -30,6 +31,9 @@ class Quote extends Component {
     }
 
     render() {
+        let output = `<tr><td align="center" valign="top" width="550" style="color:#555555; font-family:Arial,sans-serif; min-width:550px; width:550px;"><h2 style="color:#F57E4D; font-size:16px; font-weight:700;">${this.state.quoteTitle}</h2><p style="font-size:15px;">${this.state.quote}</p><p style="font-size:15px;">${this.state.quoteAttribution}</p><p style="font-size:12px; font-style:italic;">Photo: Ricardo DeAratahna, Los Angeles Times</p></td></tr>`;
+        this.props.handleChange(output);
+
         console.log(this.state);
         return (
             <div className="header-quote">
