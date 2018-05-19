@@ -7,12 +7,13 @@
 .form--text__input {
     display: flex;
     flex-flow: column-reverse;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .form--text__input--label {
     font-size: .75rem;
-    margin-bottom: 1.25rem;
+    /* margin-bottom: 1.25rem; */
 }
 
 .form--text__input--label, .form--text__input--input {
@@ -43,8 +44,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     transform-origin: left bottom;
-    transform: translate(0, 2.125rem) scale(1.5);
-}
+    transform: translate(0, 1.5rem) scale(1.5);}
 
 .form--text__input--input::-webkit-input-placeholder {
     opacity: 0;

@@ -1,57 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 
-class Quote extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            quoteTitle: '',
-            quote: '',
-            quoteAttribution: '',
-        };
-
-        this.onInputChange = this.onInputChange.bind(this);
-    }
-
-
-    onInputChange(e) {
-        const newState = {};
-        newState[e.target.name] = e.target.value;
-        this.setState( newState );
-    }
-
-    onQuoteChange() {
-
-    }
-
-    onQuoteAttributionChange() {
-
-    }
-
-    render() {
-        let output = `<tr><td align="center" valign="top" width="550" style="color:#555555; font-family:Arial,sans-serif; min-width:550px; width:550px;"><h2 style="color:#F57E4D; font-size:16px; font-weight:700;">${this.state.quoteTitle}</h2><p style="font-size:15px;">${this.state.quote}</p><p style="font-size:15px;">${this.state.quoteAttribution}</p><p style="font-size:12px; font-style:italic;">Photo: Ricardo DeAratahna, Los Angeles Times</p></td></tr>`;
-        this.props.handleChange(output);
-
-        console.log(this.state);
-        return (
-            <div className="header-quote">
-                <div class="form--text__input">
-                    <input id="name" class="form--text__input--input" name="quoteTitle" onChange={this.onInputChange} placeholder="Taking it Seriously" type="text" value={this.state.quoteTitle} required/>
-                    <label id="name-label" for="name" class="form--text__input--label label">Quote Title</label>
-                </div>
-                <div class="form--text__input">
-                    <input id="name" class="form--text__input--input" name="quote" onChange={this.onInputChange} placeholder="Taking it Seriously" type="text" value={this.state.quote} required/>
-                    <label id="name-label" for="name" class="form--text__input--label label">Quote Content</label>
-                </div>
-                <div class="form--text__input">
-                    <input id="name" class="form--text__input--input" name="quoteAttribution" onChange={this.onInputChange} placeholder="Taking it Seriously" type="text" value={this.state.quoteAttribution} required/>
-                    <label id="name-label" for="name" class="form--text__input--label label">Quote Author</label>
-                </div>
+const Quote = (props) => {
+    return (
+        <div className="header-quote">
+            <div class="form--text__input">
+                <input id="quoteTitle" class="form--text__input--input" name="quoteTitle" onChange={props.handleChange} placeholder="Taking it Seriously" type="text" value={props.state.quoteTitle} required/>
+                <label for="quoteTitle" class="form--text__input--label label">Quote Title</label>
             </div>
-        )
-    }
+            <div class="form--text__input">
+                <input id="quote" class="form--text__input--input" name="quote" onChange={props.handleChange} placeholder="Anything you suck at should make you nervous." type="text" value={props.state.quote} required/>
+                <label for="quote" class="form--text__input--label label">Quote Content</label>
+            </div>
+            <div class="form--text__input">
+                <input id="quoteAttribution" class="form--text__input--input" name="quoteAttribution" onChange={props.handleChange} placeholder="Chris Rock" type="text" value={props.state.quoteAttribution} required/>
+                <label for="quoteAttribution" class="form--text__input--label label">Quote Author</label>
+            </div>
+            <div class="form--text__input">
+                <input id="photographer" class="form--text__input--input" name="photographer" onChange={props.handleChange} placeholder="Ricardo DeAratahna, Los Angeles Times" type="text" value={props.state.photographer} required/>
+                <label for="photographer" class="form--text__input--label label">Photographer</label>
+            </div>
+        </div>
+    )
 }
 
 export default Quote;
