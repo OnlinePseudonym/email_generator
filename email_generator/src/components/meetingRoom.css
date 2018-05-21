@@ -4,6 +4,12 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
+.timeslot {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
 .meeting-room__name {
     font-size: 1.25rem;
     font-weight: 400;

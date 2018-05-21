@@ -1,13 +1,5 @@
-.editor {
-    background: #FFFFFF;
-    padding: 1rem;
-}
-
-.editor > * {
-    padding: 2rem;
-}
-
 /** text-input styling **/
+
 .form--text__input {
     display: flex;
     flex-flow: column-reverse;
@@ -64,4 +56,23 @@
 .form--text__input--input:focus + .form--text__input--label {
   transform: translate(0, 0) scale(1);
   cursor: pointer;
+}
+
+/* Dropdow Menu Styling */
+
+.form--dropdown__input--select {
+    font-family: 'Open Sans';
+    background: #fff;
+    color: #111;
+    font-size: .75rem;
+    padding: .5rem .5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    outline: none;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+.form--dropdown__input--option {
+    font-family: inherit;
+    font-weight: inherit;
 }
