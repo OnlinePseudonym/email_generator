@@ -45,12 +45,13 @@ export {
     newsHeader,
     testimonialHeader,
     remindersHeader,
+    meetingRoomArr,
 }
 
 
 /* const meetingRoom = `</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="${obj.icon}" alt=""/></td><td style="padding-left:8px;"><h2 style="color:${obj.color}; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">${obj.name}</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>`;
-
-meetingRoomArr = [
+ */
+const meetingRoomArr = [
     { 
         icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/showroom_icon_23x27.png', 
         color: '#6D8AC4', 
@@ -86,4 +87,4 @@ meetingRoomArr = [
         color: '#B8D03F', 
         name: 'The Corner Office' 
     },
-]; */
+];

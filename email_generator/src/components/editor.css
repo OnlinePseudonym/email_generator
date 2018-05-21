@@ -1,6 +1,10 @@
 .editor {
     background: #FFFFFF;
-    padding: 3rem;
+    padding: 1rem;
+}
+
+.editor > * {
+    padding: 2rem;
 }
 
 /** text-input styling **/
@@ -13,7 +17,7 @@
 
 .form--text__input--label {
     font-size: .75rem;
-    /* margin-bottom: 1.25rem; */
+    margin-bottom: .5rem;
 }
 
 .form--text__input--label, .form--text__input--input {
@@ -22,6 +26,7 @@
 }
 
 .form--text__input--input {
+    background: none;
     font-size: 1rem;
     border: 0;
     border-bottom: 1px solid #ccc;

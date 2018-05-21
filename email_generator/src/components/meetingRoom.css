@@ -1,0 +1,27 @@
+.form-wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.meeting-room__name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: grid;
+    justify-content: center;
+}
+
+.add-meeting {
+    font-weight: 700;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    color: #111111;
+    background: none;
+    border: 2px solid #111111;
+}
+
+.add-meeting:hover {
+    background: #111111;
+    color: #FFFFFF;
+    cursor: pointer;
+}
