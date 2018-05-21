@@ -202,7 +202,7 @@ class App extends Component {
          FIVE_DAY_URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}&units=imperial&units=imperial&lat=${LAT}&lon=${LON}`,
              ICON_URL = 'https://openweathermap.org/img/w/';
 
-        /* fetch(ROOT_URL).then(function(res) {
+        fetch(ROOT_URL).then(function(res) {
             if (res.ok) {
                 return res.json();
             }
@@ -214,13 +214,13 @@ class App extends Component {
                     temp: `${Math.round(data.main.temp)}`,
                 },
             });
-        }) */
-        this.setState({
+        })
+        /* this.setState({
             weather: { 
                 icon: `${ICON_URL}01d`,
                 temp: `92`,
             },
-        });
+        }); */
     }
 
     getDate = (obj) => {
