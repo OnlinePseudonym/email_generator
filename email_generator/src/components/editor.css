@@ -76,3 +76,48 @@
     font-family: inherit;
     font-weight: inherit;
 }
+
+.dropdown-wrapper {
+    padding: 1rem 0;
+    display: grid;
+}
+
+/* Buttons */
+
+.add-item {
+    font-weight: 700;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    color: #111111;
+    background: none;
+    border: 2px solid #111111;
+    transition: all .25s;
+}
+
+.add-item:hover {
+    background: #111111;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: grid;
+}
+
+.copy-html {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5rem 2rem;
+    color: #F57E4D;
+    background: none;
+    border: 2px solid #F57E4D;
+    justify-self: center;
+    align-self: center;
+    transition: all .25s;
+}
+
+.copy-html:hover {
+    background: #F57E4D;
+    color: #FFFFFF;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.closing-image {
+    background: #ECECEC;
+}
+
+.closing-preview > * {
+    max-width: 100%;
+}

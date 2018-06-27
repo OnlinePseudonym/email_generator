@@ -3,12 +3,16 @@ import React from 'react';
 import './hero.css';
 
 const Hero = (props) => {
+    const dropdown = props.heroNames.map(file => {
+        return `<option className="form--dropdown__input--option">${file}</option>`
+    });
+
+    dropdown.unshift('<option className="form--dropdown__input--option" disabled selected value> -- select an option -- </option>')
+
     return (
         <div className="hero">
-            <div className="form--text__input">
-                <input id="hero" className="form--text__input--input" name="hero" onChange={props.handleChange} placeholder="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/hero_image_511x322.png" type="text" value={props.value} required/>
-                <label htmlFor="hero" className="form--text__input--label label">Hero Image URL</label>
-            </div>
+            <h2>Hero Image</h2>
+            <select className="form--dropdown__input--select" dangerouslySetInnerHTML={{__html: dropdown }} id="hero-dropdown" name="hero-dropdown" onChange={props.handleSelect} value={props.value} />
         </div>
     )
 }

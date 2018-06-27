@@ -11,7 +11,6 @@ const quote = `<tr><td align="center" valign="top" width="550" style="color:#555
 const meetingHeader = `</tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/calander_icon_26x23.png" alt=""/></td><td style="padding-left:8px"><h2 style="color:#F57E4D; font-family:Arial,sans-serif; font-size:18px; font-style:italic;" >Today at a Glance</h2></td></tr></tbody></table></td></tr>`;
 
 const showroom = '</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/showroom_icon_23x27.png" alt=""/></td><td style="padding-left:8px;"><h2 style="color:#6D8AC4; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">The Showroom</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>';
-const showroomObj = { icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/showroom_icon_23x27.png', color: '#6D8AC4', name: 'The Showroom', }
 const factory = '</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/factory_icon_27x28.png" alt=""/></td><td style="padding-left:8px;"><h2 style="color:#B8D03F; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">The Factory</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>';
 const theater = '</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/theater_icon_25x31.png" alt=""/></td><td style="padding-left:8px;"><h2 style="color:#F47C4B; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">The Theater</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>';
 const sunRoom = '</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="http://CustomerWebData.goolara.net/lavidge/2018MorningMail/sunroom_icon_23x25.png" alt=""/></td><td style="padding-left:8px;"><h2 style="color:#C95E62; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">The Sun Room</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>';
@@ -45,46 +44,4 @@ export {
     newsHeader,
     testimonialHeader,
     remindersHeader,
-    meetingRoomArr,
 }
-
-
-/* const meetingRoom = `</tbody></table><div height="24" style="font-size:24px; height:24px; line-height:24px;">&nbsp;</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="500" style="min-width:500px; width:500px;"><tbody><tr><td align="center" bgcolor="#ECECEC" valign="top" width="500" style="background-color:#ECECEC; min-width:500px; width:500px;"><div style="height:12px; line-height:12px;">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="${obj.icon}" alt=""/></td><td style="padding-left:8px;"><h2 style="color:${obj.color}; font-family:Arial,sans-serif; font-size:18px; font-style:italic; line-height:18px; margin:0;">${obj.name}</h2></td></tr></tbody></table><div style="height:12px; line-height:12px;">&nbsp;</div></td></tr>`;
- */
-const meetingRoomArr = [
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/showroom_icon_23x27.png', 
-        color: '#6D8AC4', 
-        name: 'The Showroom', 
-    },
-    { 
-        icon:'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/factory_icon_27x28.png', 
-        color: '#B8D03F', 
-        name: 'The Factory' 
-    },
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/theater_icon_25x31.png', 
-        color: '#F47C4B', 
-        name: 'The Theater' 
-    },
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/sunroom_icon_23x25.png', 
-        color: '#C95E62', 
-        name: 'The Sun Room' 
-    },
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/quietroom_icon_25x21.png', 
-        color: '#50BCBC', 
-        name: 'The Quiet Room' 
-    },
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/situation_icon_16x22.png', 
-        color: '#6D8AC4', 
-        name: 'The Situation Room' 
-    },
-    { 
-        icon: 'http://CustomerWebData.goolara.net/lavidge/2018MorningMail/corner_icon_19x19.png', 
-        color: '#B8D03F', 
-        name: 'The Corner Office' 
-    },
-];

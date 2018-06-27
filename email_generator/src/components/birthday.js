@@ -1,13 +1,18 @@
 import React from 'react';
 
 const Birthday = (props) => {
+
+    const dropdown = props.employeeNames.map(file => `<option className="form--dropdown__input--option">${file}</option>`);
+
+    dropdown.unshift('<option className="form--dropdown__input--option" disabled selected value> -- select an option -- </option>')
+
     return (
         <form onSubmit={props.addReminder}>
-            <div className="form--text__input">
-                <input id="name" className="form--text__input--input" name={props.eventType} onChange={props.handleChange} placeholder="Billy Lavidge" type="text" value={props.reminders[props.reminders.length-1].name} />
-                <label htmlFor="name" className="form--text__input--label label">Name</label>
+            <div className="dropdown-wrapper">
+                <label htmlFor="name" className="form--dropdown--label label">Name</label>
+                <select className="form--dropdown__input--select" dangerouslySetInnerHTML={{__html: dropdown }} id="name" name="emloyee-dropdown" onChange={props.handleChange} value={props.reminders[props.reminders.length-1].name} />
             </div>
-            <button className="add-meeting" type="submit">ADD</button>
+            <button className="add-item" type="submit">ADD</button>
         </form>
     )
 }

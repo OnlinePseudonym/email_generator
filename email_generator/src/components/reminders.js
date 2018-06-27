@@ -28,16 +28,16 @@ const Reminders = (props) => {
         <div class="form--dropdown__input">
             <h2>Reminders</h2>
             {reminders}
-            <label class="form-dropdown__input--label" for="motivation">Event Type</label>
+            <label class="form-dropdown__input--label" for="event-type">Event Type</label>
             <div>
-                <select class="form--dropdown__input--select" id="dropdown" name="motivation" onChange={props.handleSelect} value={props.eventType} >
+                <select class="form--dropdown__input--select" id="event-type" name="event-type" onChange={props.handleSelect} value={props.eventType} >
                     <option class="form--dropdown__input--option" disabled selected value> -- select an option -- </option>
                     <option class="form--dropdown__input--option">Birthday</option>
                     <option class="form--dropdown__input--option">Anniversary</option>
                     <option class="form--dropdown__input--option">Kitchen Duty</option>
                 </select>
             </div>
-            <EventType addReminder={props.addReminder} eventType={props.eventType} handleChange={props.handleChange} reminders={props.reminders} />
+            <EventType addReminder={props.addReminder} employeeNames={props.employeeNames} eventType={props.eventType} handleChange={props.handleChange} reminders={props.reminders} />
         </div>
     )
 }
